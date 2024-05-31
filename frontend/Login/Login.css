@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    background-color: rgb(24, 22, 22);
+
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+li:last-of-type
+{
+    margin-left: 2rem;
+}
+a img
+{
+    height: 2.2rem;
+    padding: .2rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+main{
+    height: 90vh;
+    display: grid;
+    place-items: center;
+    padding-top: 1rem;
+}
+
+#LoginFormContainer
+{
+    margin:  50px auto;
+    height: 600px;
+    width: 650px;
+    border: 2px solid white;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+#First{
+    height: 350px;
+    background-image: url("https://assets.materialup.com/uploads/92c19733-bb00-4a59-82d6-51bc047a13de/preview.gif");
+    background-position: center;
+
+
+}
+#Second{
+    height: 250px;
+    padding-top: 1rem;
+}
+
+
+#Second form input
+{
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 0, 93);
+    outline: none;
+
+}
+#Btn1
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 0, 140);
+    color: white;
+}
+
+#Btn2
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
