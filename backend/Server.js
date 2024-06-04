@@ -49,10 +49,41 @@ app.post("/api/Login",(req, res) => {
     }
 });
 
+//^ GET ProdutData
+app.get("/api/ProductList",async (req, res) => {
+    let allData = await ProductModel.find()
+    res.json(allData)
+})
+
+
 //^ POST ProdutData
 app.post("/api/SubmitProduct",(req, res) => {
     console.log(req.body);
+
+    let ProductName = req.body.ProductName;
+    let ProductPrice = req.body.ProductPrice;
+    let ProductDescription = req.body.ProductDescription;
+    let ProductCategory = req.body.ProductCategory;
+
+    console.log(ProductName);
+    console.log(ProductPrice);
+    console.log(ProductDescription);
+    console.log(ProductCategory);
+
+    // Save The Data in Product Model:
+    let Product = new ProductModel({
+        ProductName: ProductName,
+        ProductPrice: ProductPrice,
+        ProductDescription: ProductDescription,
+        ProductCategory: ProductCategory,
+    });
+
+    Product.save();
+
+
 });
+
+
 
 
 

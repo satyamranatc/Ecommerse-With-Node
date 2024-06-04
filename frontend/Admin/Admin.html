@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="./Admin.css">
+     
 </head>
 <body>
     <nav>
@@ -14,14 +15,32 @@
                 <a href="../Home/Home.html">Home</a>
             </li>
             <li>
-                <a href="../Service/Servce.html">Sevrice</a>
+                <a href="../Service/Servce.html">Service</a>
             </li>
         </ul>
     </nav>
-
     <main>
         <h2>Admin</h2>
-    </main>
+        
+        <div id="MyForm">
+            <form id = "AdminFrom">
+                <label for="name">Product Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter product name" required>
     
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" placeholder="Enter product price" required>
+    
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Enter product description" rows="4" required></textarea>
+    
+                <label for="category">Category</label>
+                <input type="text" id="category" name="category" placeholder="Enter product category" required>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./Admin.js"></script>
 </html>
